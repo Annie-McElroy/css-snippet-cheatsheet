@@ -1,0 +1,44 @@
+/* Media queries to make 3 cards across on laptop, 2 across on tablet, and single-column on mobile
+Some kind of animation included
+User variables for color scheme, etc.
+Each card should have a linear  */
+
+* {
+    background-color: black;
+}
+
+:root {
+    --text: white;
+    --back: black;
+}
+
+header {
+    text-align: center;
+    color: var(--text);
+}
+
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h2 {
+    border-style: solid;
+    border-color: var(--text);
+    position: relative;
+    bottom: 20%;
+    background-color: var(--back);
+    color: var(--text);
+}
+
+article {
+    border-style: dashed;
+    color: var(--text);
+}
+
+@media screen and (min-width: 992px) {
+    article {
+        flex: 0 0 200px
+    }
+}
