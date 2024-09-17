@@ -46,11 +46,17 @@ header h1 {
   position: relative;
   bottom: 30px;
   background-color: var(--main-bg);
+  transition: all 0.5 ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 5px 5px var(--dark-txt);
+  cursor: pointer;
 }
 
 .card-code {
   background: linear-gradient(var(--dark-txt), var(--light-txt));
   color: #222;
   width: 100%;
-  min-height: 140px;
+  min-height: 130px;
 }
