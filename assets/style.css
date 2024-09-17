@@ -1,16 +1,16 @@
 :root {
   --main-bg: #0e1116;
   --light-txt: #d3c0d2;
-  --dark-text: #a37774;
+  --dark-txt: #a37774;
 }
 
-* {
+body {
   background: var(--main-bg);
   color: var(--light-txt);
 }
 
 header h1 {
-  color: var(--dark-text);
+  color: var(--dark-txt);
 }
 
 .cards-container {
@@ -36,7 +36,7 @@ header h1 {
 
 .card h3 {
   border: 1px solid var(--light-txt);
-  color: var(--dark-text);
+  color: var(--dark-txt);
   padding: 10px;
   text-align: center;
   margin: 0px 16px -20px;
@@ -45,14 +45,12 @@ header h1 {
   align-self: flex-start;
   position: relative;
   bottom: 30px;
+  background-color: var(--main-bg);
 }
 
-.card-code,
-.card pre {
-  background-color: var(--dark-text);
-  color: var(--light-text);
-}
-
-.card pre {
+.card-code {
+  background: linear-gradient(var(--dark-txt), var(--light-txt));
+  color: #222;
   width: 100%;
+  min-height: 140px;
 }
