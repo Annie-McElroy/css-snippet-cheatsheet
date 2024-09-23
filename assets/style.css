@@ -43,7 +43,7 @@ header {
   color: var(--light-txt);
 }
 
-.card h3 {
+.card-title {
   border: 1px solid var(--light-txt);
   color: var(--dark-txt);
   padding: 10px;
@@ -55,15 +55,21 @@ header {
   position: relative;
   bottom: 30px;
   background-color: var(--main-bg);
-  transition: all 0.5 ease-in-out;
 }
 
-.card:hover {
-  box-shadow: 5px 5px var(--dark-txt);
+.card .card-title {
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover .card-title {
+  box-shadow: inset 0px 0px 8px var(--dark-txt);
   cursor: pointer;
 }
 
 .card-code {
+  display: flex;
+  align-items: center;
   background: linear-gradient(var(--dark-txt), var(--light-txt));
   color: #222;
   width: 100%;

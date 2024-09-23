@@ -18,7 +18,7 @@
   <main>
     <div class="cards-container">
       <section class="card">
-        <h3>Rounded Fancy Box</h3>
+        <h3 class="card-title">Rounded Fancy Box</h3>
         <p>Creates a simple rounded corner fancy box.</p>
         <article class="card-code">
           <pre><code>
@@ -34,17 +34,25 @@
       </section>
 
       <section class="card">
-        <h3>Box Transition Glow</h3>
+        <h3 class="card-title">Box Transition Glow</h3>
         <p>Use transition and box shadows to glow on hover.</p>
         <article class="card-code">
           <pre><code>
-
+            .card .card-header {
+              border-radius: 7px;
+              transition: all 0.5s ease-in-out;
+            }
+            
+            .card:hover,
+            .card:hover .card-header {
+              box-shadow: inset 0px 0px 8px #fff
+            }
           </code></pre>
         </article>
       </section>
 
       <section class="card">
-        <h3>Media Query for Mobile</h3>
+        <h3 class="card-title">Media Query for Mobile</h3>
         <p>Media Query example for mobile responsive.</p>
         <article class="card-code">
           <pre><code>
@@ -63,31 +71,41 @@
       </section>
 
       <section class="card">
-        <h3>Flexbox Navbar</h3>
+        <h3 class="card-title">Flexbox Navbar</h3>
         <p>Example of a flexbox navbar.</p>
         <article class="card-code">
           <pre><code>
-            
+            .nav {
+              display: flex;
+              justify-content: flex-end;
+            }
           </code></pre>
         </article>
       </section>
 
       <section class="card">
-        <h3>Flexbox Row</h3>
+        <h3 class="card-title">Flexbox Row</h3>
         <p>Use to create a Flexbox row layout.</p>
         <article class="card-code">
           <pre><code>
-            
+            .row {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
           </code></pre>
         </article>
       </section>
 
       <section class="card">
-        <h3>Flexbox Column</h3>
+        <h3 class="card-title">Flexbox Column</h3>
         <p>Use to create a Flexbox column layout,</p>
         <article class="card-code">
           <pre><code>
-            
+            .column {
+              display: flex;
+              flex-direction: column;
+            }
           </code></pre>
         </article>
       </section>
