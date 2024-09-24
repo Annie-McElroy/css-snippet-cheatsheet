@@ -32,7 +32,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  flex: 0 0 270px;
+  flex: 0 0 312px;
   height: 200px;
   max-height: 200px;
   border-style: dotted;
@@ -76,4 +76,16 @@ header {
   width: 100%;
   min-height: 130px;
   user-select: all;
+}
+
+@media screen and (max-width: 992px) {
+  .card{
+    flex: 0 0 270px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 50%;
+  }
 }
