@@ -4,7 +4,7 @@
 CSS Snippet Cheatsheet is a collection of common CSS code snippets that can be easily selected for copy to add into projects. You can view the current collection in a responsive setting on both computer and mobile, easily identify each snippet by their headings, and highlight a code by clicking on it for easy copy.
 
 ## Usage
-Access the webpage here: ![CSS Snippet Cheatsheet](https://annie-mcelroy.github.io/css-snippet-cheatsheet/)
+Access the webpage here: [CSS Snippet Cheatsheet](https://annie-mcelroy.github.io/css-snippet-cheatsheet/)
 
 Feel free to fork/clone this repository to create your own cheatsheet!
 
